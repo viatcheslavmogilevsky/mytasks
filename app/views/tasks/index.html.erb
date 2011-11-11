@@ -12,14 +12,9 @@
 
 <% @tasks.each do |task| %>
   <tr>
-    
-
     <td><%= link_to task.name, task %></td>
     <td><%= task.do_before %></td>
     <td><%= task.status %></td>
-
-    <td><%= link_to 'Show', task %></td>
-
     <td><%= link_to 'Edit', edit_task_path(task) %></td>
     <td><%= link_to 'Destroy', task, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
